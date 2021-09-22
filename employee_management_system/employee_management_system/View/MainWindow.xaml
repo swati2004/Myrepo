@@ -1,0 +1,29 @@
+﻿<Window x:Class="employee_management_system.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:employee_management_system"
+        mc:Ignorable="d"
+        Title="Login Form" Height="519.6" Width="800">
+    <Grid Margin="0,0,-0.4,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="596*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Login to your Account" HorizontalAlignment="Left" Width="489" Margin="35.2,239,0,10" FontFamily="Segoe UI Black" FontSize="15" Foreground="Black" Grid.Column="1">
+            <Image HorizontalAlignment="Left" Height="184" VerticalAlignment="Top" Width="765" Margin="-226,-244,-62.2,0" Source="image/employee.jpg" Stretch="Fill"/>
+        </GroupBox>
+        <Image HorizontalAlignment="Left" Height="138" VerticalAlignment="Top" Width="172" Margin="34,244,0,0" Source="image/images.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Label Content="Username" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83.8,289,0,0" FontSize="15" FontFamily="Segoe UI Black" RenderTransformOrigin="0.155,-0.872" Grid.Column="1"/>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84.2,352,0,0" Width="88" FontSize="15" FontFamily="Segoe UI Black" Background="{x:Null}" Grid.Column="1"/>
+
+        <TextBox x:Name="txt_username" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Margin="253.8,289,0,0" FontSize="15" FontFamily="Segoe UI Black" Grid.Column="1" />
+        <Label Content="error" Margin="254.2,323,113.6,132.4" Grid.Column="1" ></Label>
+        <TextBox x:Name="txt_password" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Margin="253.2,353,0,0" RenderTransformOrigin="0.414,0.552" FontFamily="Segoe UI Black" Grid.Column="1"/>
+        <Label Content="error" Margin="253.2,382,219.6,72.4" Grid.Column="1" />
+        <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="254.2,424,0,0" Background="#FF1B1919" FontWeight="Bold" FontSize="16" FontFamily="Segoe UI Black" OpacityMask="#FF902525" Foreground="#FFFDFAFA" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="btn_exit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="383.2,424,0,0" FontWeight="Bold" FontSize="16" FontFamily="Yu Gothic UI Semibold" Height="25" Background="#FF140707" Foreground="#FFE7DCDC" Grid.Column="1"/>
+
+    </Grid>
+</Window>
